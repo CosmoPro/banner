@@ -1,0 +1,94 @@
+
+<html>
+  <head>
+    <title>𝙂𝙀𝙉𝙀𝙍𝘼𝘿𝙊𝙍 𝘿𝙀 𝘽𝘼𝙉𝙉𝙀𝙍 ༒ᯤ𝘾𝙊𝙎𝙈𝙊ᯤ༒</title>
+    <link rel="icon" href="../banner/fav2.ico">
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="google" content="notranslate">
+    <meta name="Description" content="Genera un banner con degradado 𝘾𝙤𝙨𝙢𝙤 para todas las aplicaciones de netfree y vps.">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../banner/style.css">
+     <noscript> <META HTTP-EQUIV="Refresh" CONTENT="0;URL=error.html"> </noscript>
+  </head>
+
+  <body id="bg">
+<div class="container">
+    <div id="header">
+      <h1 id="title" class="text-center"><strong>𝙂𝙀𝙉𝙀𝙍𝘼𝘿𝙊𝙍 𝘿𝙀 𝘽𝘼𝙉𝙉𝙀𝙍 ༒ᯤ𝘾𝙊𝙎𝙈𝙊ᯤ༒</strong></h1>
+      <p id="graylabel1" style="padding-bottom: 10px;"></p>
+    </div>
+    <div id="input" class="col-md-2" style="padding-left: 0;">
+      <label id="label1" for="color1">Primer Color</label>
+      <input style="border-radius: 10px; position: inherit;" class="form-control col-md-4" id="color1" name="color1" value="00A1FB" data-jscolor="{preset:'small dark'}" oninput="updateSpitter(event)" onchange="updateSpitter(event)">
+      <br>
+	  <label id="label2" for="color2">Segundo Color</label>
+      <input style="border-radius: 10px; position: inherit;" class="form-control col-md-3" id="color2" name="color2" value="01FD75" data-jscolor="{preset:'small dark'}" oninput="updateSpitter(event)" onchange="updateSpitter(event)">
+      <br>
+	  <label id="label3" for="color3" style="display: none;">Tercer Color</label>
+      <input style="border-radius: 10px; position: inherit; display: none;" class="form-control col-md-2" id="color3" name="color3" value="FFFFFF" data-jscolor="{preset:'small dark'}" oninput="updateSpitter(event)" onchange="updateSpitter(event)">
+      <br>
+	  <label id="label4" for="color4" style="display: none;">Cuarto Color</label>
+      <input style="border-radius: 10px; position: inherit; display: none;" class="form-control col-md-1" id="color4" name="color4" value="FFFFFF" data-jscolor="{preset:'small dark'}" oninput="updateSpitter(event)" onchange="updateSpitter(event)">
+      
+	  <label id="label5" for="steps">Texto</label>
+      <input style="border-radius: 10px; position: inherit;" class="form-control col-md-2" id="nickname" name="nickname" type="text" placeholder="Texto" value="NETFREE LATINO" oninput="updateSpitter(event);" onchange="updateSpitter(event)">
+      <div id="options">
+        <div id="typeslist">
+          <label style="margin-bottom: 0px; margin-top: 15px;">Codigo</label>
+          <select style="width:100%; border-radius: 10px; padding-right: 6px; padding-left: 6px; padding-top: 6px; padding-bottom: 6px;" type="select" id="types" onchange="rgbtype = this.options[this.selectedIndex].innerText; updateSpitter(event);">
+            <option value="0">HTML</option>
+          </select>
+        </div>
+        <div id="coloramountlist">
+          <label style="margin-bottom: 0px; margin-top: 15px;">Cantidad De Colores</label>
+          <select style="width:100%; border-radius: 10px; padding-right: 6px; padding-left: 6px; padding-top: 6px; padding-bottom: 6px;" type="select" id="numOfColors" onchange="numberOfColors = this.options[this.selectedIndex].innerText; updateSpitter(event); hideColors();">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+		<br>
+        <div id="appearance">
+          <input type="checkbox" id="darkmode" onclick="darkMode();">
+          <label for="darkmode" style="margin-bottom: 0px;margin-top: 0px;">Ver con otro fondo</label>
+        </div>
+      </div>
+    </div>
+	<br>
+	 <div id="coloredNick" class="minecraft" style="word-wrap: break-word;"></div>
+    <div id="output">
+      <label id="label4" for="spitter">HTML Generado <button type="button" class="btn btn-primary btn-sm" onclick="copyElementText()">Copiar Codigo</button></label>
+      <pre id="spitter" class="pp" style="border-radius: 10px; white-space: pre-wrap; height: 95px; margin-right: 15px;" onclick="copyTextToClipboard(document.getElementById('spitter').textContent);"></pre>
+      <p id="error" style="display: none; margin-bottom: 10px;">Ten en cuenta que algunas aplicaciones del NetFree limitan la cantidad de caracteres que puedes ingresar.</p>
+    </div>
+   <br>
+</div>
+   <footer class="footer" style="background-color: #0a4275;">  
+	   <div class="container">   
+ <div class="row align-items-end" style="padding: 10px;"> 
+       <div class="col-12 text-center" style="padding: 10px;"><a class="text-info text-decoration-none" href="https://t.me/TheMasterCosmo"><span style="color:#0EFD30">༒ᯤ 𝙏𝙝𝙚𝙈𝙖𝙨𝙩𝙚𝙧𝘾𝙤𝙨𝙢𝙤 ᯤ༒</span></a> 
+     </div>   
+   </div> 
+   </div>  
+   </footer>
+   
+     <script>
+
+  function copyElementText() {
+  var copyText = document.getElementById('spitter').innerText;
+  var elem = document.createElement("textarea");
+  document.body.appendChild(elem);
+   elem.value = copyText;
+   elem.select();
+ document.execCommand("copy");
+   document.body.removeChild(elem);
+   alert('Banner Copiado');
+}
+	   </script>
+    <script src="../banner/script.js"></script>
+    <script src="../banner/jscolor.js"></script>
+  </body>
+
+</html>
