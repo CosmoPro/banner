@@ -1,0 +1,135 @@
+.color {
+  width: 100%;
+}
+.darktextboxes {
+  background-color:#1F2933;
+  border-color:#2C3844;
+  color:white;
+}
+.darkgray {
+  color:darkgray;
+}
+.gray {
+  color:gray;
+}
+.darkerrortext {
+  color:red;
+}
+.errortext {
+  color:darkred;
+}
+.pp::-webkit-scrollbar {
+  display: none; 
+}
+.pp {
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+@font-face {
+	src:url(font.ttf);
+	font-family:'font1';
+
+		}
+	*{
+    font-family: font1;
+}
+		html {
+  position: relative;
+  min-height: 100%;
+}
+body.dark {
+  background-color:#2A5F93;
+  color:white;
+
+}
+select.dark {
+  background-color:#1F2933;
+  border-color:#2C3844;
+  color:white;
+
+}
+#colors {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+#coloredNick p {
+  font-size: 4rem;
+
+}
+
+
+#title {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+
+}
+#inputs{
+  position: relative;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+body{
+	margin-auto;
+  margin-bottom: 60px;
+
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
