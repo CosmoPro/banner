@@ -1,0 +1,21 @@
+{
+  "name": "particles.js",
+  "main": "particles.js",
+  "homepage": "https://cosmopro.github.io/banner/particles.js",
+  "authors": [
+    "Vincent Garreau <cosmo@gmail.com>"
+  ],
+  "description": "A lightweight JavaScript library for creating particles.",
+  "keywords": [
+    "particle",
+    "particles"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
