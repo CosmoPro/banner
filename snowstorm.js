@@ -24,7 +24,7 @@ function SnowStorm() {
   this.targetElement = null;      // element which snow will be appended to (document body if null/undefined) - can be an element ID string, or a DOM node reference
   this.followMouse = true;        // Snow will change movement with the user's mouse
   this.snowColor = '#FFFFFF';        // Don't eat (or use?) yellow snow.
-  this.snowCharacter = '&༒;༒;  // &bull; = bullet, &middot; is square on some systems etc.
+  this.snowCharacter = '&bull;';  // &bull; = bullet, &middot; is square on some systems etc.
   this.snowStick = true;          // Whether or not snow should "stick" at the bottom. When off, will never collect.
   this.useMeltEffect = true;      // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
   this.useTwinkleEffect = false;  // Allow snow to randomly "flicker" in and out of view while falling
